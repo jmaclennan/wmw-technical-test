@@ -1,12 +1,12 @@
 /**
  * Text colors.
  */
-$color-body-text: 'aktiv-grotesk', sans-serif;
+$color-body-text: var(--font-body-color);
 
 /**
  * Background colors.
  */
-$color-body: 'aktiv-grotesk', sans-serif;
+$color-body: var(--font-body-background-color);
 
 /**
  * Placeholders.
@@ -33,8 +33,10 @@ $color-success-bg: #000000;
 /**
  * Typography.
  */
-$font-heading: 'aktiv-grotesk', sans-serif;
+$font-heading: 'helvetica neue', 'aktiv-grotesk', sans-serif;
+$font-heading-color: var(--font-heading-color);
 $font-body: var(--font-body);
+$font-body-color: var(--font-body-color);
 $font-body-weight: var(--font-body-weight);
 $font-body-style: var(--font-body-style);
 $font-body-bold-weight: var(--font-body-bold-weight);
@@ -68,12 +70,13 @@ $large-up: 'large-up';
 $widescreen: 'widescreen';
 
 $breakpoints: (
-  $small '(max-width: #{$grid-medium - 1})',
-  $medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})',
-  $medium-down '(max-width: #{$grid-large - 1})',
-  $medium-up '(min-width: #{$grid-medium})',
-  $large '(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})',
-  $large-down '(max-width: #{$grid-widescreen - 1})',
-  $large-up '(min-width: #{$grid-large})',
-  $widescreen '(min-width: #{$grid-widescreen})'
+	$small '(max-width: #{$grid-medium - 1})',
+	$medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})',
+	$medium-down '(max-width: #{$grid-large - 1})',
+	$medium-up '(min-width: #{$grid-medium})',
+	$large
+		'(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})',
+	$large-down '(max-width: #{$grid-widescreen - 1})',
+	$large-up '(min-width: #{$grid-large})',
+	$widescreen '(min-width: #{$grid-widescreen})'
 );
